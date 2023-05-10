@@ -1,0 +1,162 @@
+Body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --main-color: #0078ff;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  padding: 100px 0;
+  background-color: #c9cfd68f;
+  text-align: center;
+}
+
+.headings {
+  position: relative;
+  padding: 10px;
+}
+.headings::after {
+  content: "";
+  background-color: var(--main-color);
+  height: 4px;
+  width: 140px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*? ----------- Fixed Items Start ----------- */
+/*? ----------- Fixed Items End ----------- */
+
+/*? ----------- NavBar Styling Start ----------- */
+#navbar .navbar-brand {
+  color: var(--main-color);
+}
+#navbarNav .navbar-nav .nav-item .nav-link {
+  color: var(--main-color);
+}
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #66cc99;
+}
+/*? ----------- NavBar Styling End ----------- */
+
+/*? ----------- Home Styling Start ----------- */
+.home {
+  background: url(../imgs/intro-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.text {
+  color: white;
+}
+.text h1 {
+  font-size: 4.375rem;
+}
+/*? ----------- Home Styling End ----------- */
+
+/*? ----------- About Styling Start ----------- */
+/*!NONE*/
+/*? ----------- About Styling End ----------- */
+
+/*? ----------- Services Styling Start ----------- */
+.icon {
+  transition: all 0.5s;
+  box-sizing: border-box;
+  border: 8px solid gray;
+}
+
+.card-body {
+  padding: 40px 30px;
+}
+
+.card-body:hover .icon {
+  border: 8px solid var(--main-color);
+}
+
+.counter {
+  background-image: url(../imgs/counters-bg.jpg);
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.counter i {
+  border: 7px solid white;
+  border-radius: 50%;
+}
+
+.layer-counter {
+  background-color: var(--main-color);
+  opacity: 0.6;
+  padding: 100px;
+}
+/*? ----------- Services Styling End ----------- */
+
+/*? ----------- Work Styling Start ----------- */
+.web-design-font{
+    font-size: .75rem;
+}
+.web-design {
+  color: var(--main-color);
+}
+.card{
+    overflow: hidden;
+}
+.card-img-top{
+    transition: all .3s;
+}
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+/*? ----------- Work Styling End ----------- */
+
+/*? ----------- Blog Styling Start ----------- */
+  .carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.carouselPart{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.carousleLayer{
+    background-color: var(--main-color);
+    opacity: .8;
+}
+
+/*? ----------- Blog Styling End ----------- */
+.blog-card{
+    position: relative;
+}
+.blog-btn{
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+/*? ----------- Contact Styling Start ----------- */
+.contact{
+        background-image: url(../imgs/overlay-bg.jpg);
+        color: white;
+        padding-top: 0;
+        padding-bottom: 0;
+}
+.contact-layer{
+    background-color: var(--main-color);
+    opacity: .6;
+}
+
+/*? ----------- Contact Styling End ----------- */
